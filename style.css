@@ -1,0 +1,502 @@
+:root{
+    --dark:#2f2e41;
+    --primary:#7A72FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+header nav .logo a{
+    text-decoration: none;
+    color: #2f2e41;
+    font-weight: bold;
+    text-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    font-size: 35px;
+    position: relative;
+    display: block;
+    margin-left: 50px;
+}
+header nav .logo a img{
+    width: 200px;
+}
+
+header nav .searcharea{
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    width: 170px;
+    height: 45px;
+    align-items: center;
+    border-radius: 30px;
+    position: fixed;
+    right: 6%;
+    justify-content: center;
+    padding-left: 25px;
+    box-shadow: 2px 2px 30px rgb(167 158 245 / 20%);
+    z-index: 1;
+}
+header nav .searcharea input{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    font-family:'Courier New', Courier, monospace;
+    border: none;
+    outline: none;
+}
+header .main{
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+    margin-left: 50px;
+    position: relative;
+}
+header .main .section1{
+    width: 500px;
+    display: flex;
+}
+header .main .section1 img{
+    width: 100%;
+}
+header .main .section2{
+    margin-left: 300px;
+    font-family: Roboto;
+    position: absolute;
+    right: 0;
+}
+header .main .section2 h1{
+    line-height: 20px;
+    letter-spacing: 25px;
+    font-size: 4rem;
+    font-family: roboto;
+    color: #2f2e41;
+}
+header .main .section2 h2{
+    font-size: 4rem;
+    font-family: roboto;
+    color: #2f2e41;
+}
+header .main span{
+    color: #7A72FF;
+}
+header .main .section2 button{
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    background-color: #2f2e41;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    transition: all .3s ease;;
+}
+header .main .section2 button:hover{
+    background-color: #7A72FF;
+}
+header .icon-area{
+    position: fixed;
+    left: 2%;
+    margin-top: -17rem;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    box-shadow: 2px 2px 30px rgba(102, 98, 145, 0.5);
+}
+header .icon-area a{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    justify-content: center;
+    align-items: center;
+}
+header .icon-area a .fab{
+    color: #2f2e41;
+    transition: all .3s ease;
+}
+header .icon-area a:nth-child(1):hover .fab{
+    color:rgba(21, 0, 255, 0.925);
+}
+header .icon-area a:nth-child(2):hover .fab{
+    color:rgba(0, 162, 255, 0.932);
+}
+header .icon-area a:nth-child(3):hover .fab{
+    color:rgba(255, 0, 221, 0.932);
+}
+header .icon-area a:nth-child(4):hover .fab{
+    color:rgba(219, 9, 9, 0.932);
+}
+
+
+section.bag-collection{
+    width: 100%;
+    margin-top: 12rem;
+    box-shadow: 2px 2px 30px rgba(40, 30, 145, 0.2);
+    position: relative;
+    border-radius: 8px;
+    padding: 10px;
+}
+section.bag-collection h2{
+    text-align: center;
+    font-family: roboto;
+    padding-top: 50px;
+}
+section.bag-collection h2 span{
+    color:var(--primary);
+}
+section.bag-collection .poduct{
+    display: flex;
+    margin: 30px 0;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-size: 1000px;
+    position: relative;
+    flex-direction: unset;
+}
+section.bag-collection .poduct .poduct-box{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 330px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px 30px;
+}
+section.bag-collection .poduct .poduct-box img{
+    width: 180px;
+}
+section.bag-collection .poduct .poduct-box h3{
+    color: #645f5f;
+    font-size: 13px;
+}
+section.bag-collection .poduct .poduct-box a{
+    color: #2c2c2c;
+    font-size: 1rem;
+    text-decoration: none;
+}
+section.bag-collection .poduct .poduct-box .btn{
+    background:var(--primary);
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    margin-bottom: -20px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    animation: fade .2s;
+}
+section.bag-collection .poduct .poduct-box:hover .btn{
+    display: flex;
+}
+section.bag-collection .poduct .poduct-box:hover{
+    box-shadow: 2px 2px 30px rgba(40, 30, 145, 0.2);
+    border-radius: 8px;
+}
+
+section.about{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    margin: 50px auto;
+    justify-content: space-between;
+    padding: 30px;
+}
+section.about .left{
+    width: 42%;
+    font-family: myriad pro;
+}
+section.about .left h1{
+    font-size: 50px;
+    color: #333333;
+    margin: 0;
+    font-weight: 700;
+}
+section.about .left h3{
+    font-size: 30px;
+    font-weight: 300;
+    COLOR: rgb(26, 24, 24);
+    margin-top: 10px;
+}
+section.about .left h3 span{
+    color:var(--primary);
+}
+section.about .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+section.about .left p{
+    font-size: 1rem;
+    letter-spacing: .5px;
+    margin-top: 10px;
+    color: #bdbdbd;
+}
+
+section.watch-collection{
+    width: 100%;
+    box-shadow: 2px 2px 30px rgba(40, 30, 145, 0.2);
+    position: relative;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5rem;
+}
+section.watch-collection h2{
+    text-align: center;
+    margin: 40px;
+    font-family: roboto;
+    font-size: 2rem;
+}
+section.watch-collection h2 span{
+    color:var(--primary);
+}
+section.watch-collection .watch-box{
+    display: flex;
+    flex-direction: unset;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    background-size: 1000px;
+    position: relative;
+}
+section.watch-collection .watch-box .watch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 330px;
+    margin: 10px 30px;
+    position: relative;
+    justify-content: center;
+    border-radius: 10px;
+}
+section.watch-collection .watch-box .watch img{
+    width: 180px;
+}
+section.watch-collection .watch-box .watch h4{
+    color:rgb(114, 114, 114);
+    font-size: 12px;
+}
+section.watch-collection .watch-box .watch a{
+    text-decoration: none;
+    color:rgb(75, 73, 73);
+}
+section.watch-collection .watch-box .watch .btn-1{
+    width: 160px;
+    height: 40px;
+    background-color:var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -20px;
+    border-radius: 50px;
+    display: none;
+}
+section.watch-collection .watch-box .watch:hover .btn-1{
+    display: flex;
+}
+section.watch-collection .watch-box .watch:hover{
+    box-shadow: 2px 2px 30px rgba(40, 30, 145, 0.2);
+    border-radius: 8px;
+}
+
+section.notification{
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+section.notification h2{
+    font-size: 1.5rem;
+    font-family: roboto;
+    margin-bottom: 30px;
+}
+section.notification .notification-box{
+    width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  2px 2px 30px rgba(40, 30, 145, 0.2);
+    border-radius: 50px;
+}
+section.notification .notification-box input{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+section.notification .notification-box a{
+    width: 120px;
+    height: 40px;
+    background-color:var(--dark);
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: all .3s ease;
+}
+section.notification .notification-box a:hover{
+    background-color: var(--primary);
+}
+hr{
+    margin-bottom: 30px;
+}
+footer{
+    background-color: #000;
+    padding: 20px;
+    width: 100%;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+}
+
+
+@media (max-width:768px){
+    .container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    header nav .logo a{
+        text-decoration: none;
+        color: #2f2e41;
+        font-weight: bold;
+        text-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+        font-size: 10px;
+        display: block;
+        margin-left: -15px;
+    }
+    header nav .logo a img{
+        width: 100px;
+    }
+    header nav{
+        margin-top: 10px;
+    }
+    header nav .searcharea{
+        height: 40px;
+    }
+    header .main{
+        flex-direction: column-reverse;
+        display: flex;
+        margin-top: 17px;
+        justify-content: center;
+        margin-left: -12px;
+    }
+    header .main .section1{
+        width: 300px;
+    }
+    header .main .section2{
+        margin-top: -500px;
+        bottom: -200px;
+        margin-left: 43px;
+        position: absolute;
+        right: auto;
+    }
+    header .main .section2 h1,header .main .section2 h2{
+        font-size: 2rem;
+    }
+    header .icon-area a{
+        padding: 8px 6px;
+    }
+
+    section.bag-collection{
+        margin-top: 16rem;
+    }
+    section.bag-collection h2{
+        font-size: 1rem;
+    }
+    section.bag-collection .poduct .poduct-box{
+        width: 107px;
+        height: 184px;
+    }
+    section.bag-collection .poduct .poduct-box img{
+        width: 87px;
+    }
+    section.bag-collection .poduct .poduct-box h3{
+        font-size: 8px;
+    }
+    section.bag-collection .poduct .poduct-box a{
+        font-size: 13px;
+    }
+    section.bag-collection .poduct .poduct-box .btn{
+        width: 68px;
+        height: 24px;
+        bottom: 7px;
+        font-size: 8px;
+    }
+    section.about{
+        width: 100%;
+        padding: 17px;
+        flex-direction: column;
+    }
+    section.about .left h1{
+        font-size: 17px;
+        text-align: center;
+    }
+    section.about .left{
+        width: 99%;
+        margin-bottom: 50px;
+    }
+    section.about .left h3{
+        font-size: 15px;
+        margin-top: 26px;
+    }
+    section.notification h2{
+        font-size: 15px;
+    }
+    section.notification .notification-box{
+        width: 359px;
+        height: 48px;
+    }
+    section.notification .notification-box input{
+        height: 48px;
+    }
+    section.notification .notification-box a{
+        width: 75px;
+        font-size: 10px;
+        height: 28px;
+    }
+    footer p{
+        font-size: 8px;
+    }
+    header .icon-area{
+        display: none;
+    }
+}
